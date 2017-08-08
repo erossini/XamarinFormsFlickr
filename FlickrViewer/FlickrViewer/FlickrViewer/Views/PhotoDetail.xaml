@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlickrViewer.Views.PhotoDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="backButton" Text="Back" Clicked="backButton_Clicked" HorizontalOptions="FillAndExpand" />
+            <Image Source="{Binding media.m}" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            <Label Text="{Binding title}" HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
